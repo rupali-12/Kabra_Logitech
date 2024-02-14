@@ -1,6 +1,6 @@
 backened start command-> 
 nodemon --exec npx ts-node src/index.ts
-frontend start command->
+frontend start command-> npm start
 
 Features
 Product Management:
@@ -26,8 +26,8 @@ MongoDB for data storage
 
 Setup Instructions
 Clone the repository:
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/rupali-12/Kabra_Logitech.git
+cd Assessment_kabra_logitech
 
 Install dependencies:
 npm install
