@@ -1,0 +1,52 @@
+Endpoints  (BACKENED)
+Baseurl-> http://localhost:3000/api
+1. Product Management
+->Create a Product
+URL: /addproduct
+Method: POST
+Description: Creates a new product with the provided details.
+Request Body:
+name: String (required) - The name of the product.
+imagePath: String (required) - The path to the product image.
+description: String (required) - A brief description of the product.
+quantity: Number (required) - The quantity of the product available.
+unitPrice: Number (required) - The unit price of the product.
+
+-> Get All Products
+URL: /allproducts
+Method: GET
+Description: Retrieves a list of all products.
+
+2. Cart Management
+->Add to Cart
+URL: /addtocart
+Method: POST
+Description: Adds a product to the cart.
+Request Body:
+productId: String (required) - The ID of the product to add to the cart.
+quantity: Number (required) - The quantity of the product to add to the cart.
+
+->Update Cart Item Quantity
+URL: /cart/:itemId
+Method: PUT
+Description: Updates the quantity of a product in the cart.
+URL Parameters:
+cartItemId: String (required) - The ID of the cart item to update.
+Request Body:
+quantity: Number (required) - The new quantity of the product in the cart.
+
+->Get Cart Items
+URL: /allcartitem
+Method: GET
+Description: Retrieves all items in the cart.
+
+
+Endpoints (FRONTEND)
+
+1. Product Management:
+/add-product: Route for adding a new product.
+/: product list page route.
+
+
+2. Cart Management:
+/cartitem: Route for cart items 
