@@ -1,5 +1,5 @@
 backened start command-> 
-nodemon index
+npx nodemon index.js
 frontend start command-> npm start
 
 Features
