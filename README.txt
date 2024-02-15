@@ -1,5 +1,5 @@
 backened start command-> 
-nodemon --exec npx ts-node src/index.ts
+nodemon index
 frontend start command-> npm start
 
 Features
